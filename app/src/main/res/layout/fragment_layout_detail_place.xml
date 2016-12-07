@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ToggleButton
+                        android:layout_gravity="center"
+                        android:textOn=""
+                        android:textOff=""
+                        android:id="@+id/like"
+                        android:checked="false"
+                        android:background="@drawable/toggle_heart"
+                        android:padding="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="ESTACIA, REUS Y CARME"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textAllCaps="true"
+                            android:maxLines="1"
+                            android:id="@+id/tv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:text="Av. Bolivar 3666"
+                            android:id="@+id/tv_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/btn_value"
+                        android:textColor="@color/black"
+                        android:text="Valorar"
+                        android:textSize="16dp"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/button_square_border"
+                        android:layout_width="1dp"
+                        android:layout_height="35dp" />
+                    <Button
+
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/btn_scanner"
+                        android:textColor="@color/black"
+                        android:text="Escanear"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16dp"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_square_border"
+                        android:layout_width="1dp"
+                        android:layout_height="35dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_place"
+                android:scaleType="fitXY"
+                android:src="@drawable/descarga"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:padding="9dp"
+                    android:src="@drawable/ic_favorite"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageView2" />
+
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Lugar: Gran Teatro Nacional "
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:maxLines="1"
+                        android:id="@+id/tv_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:maxLines="1"
+                        android:textSize="15dp"
+                        android:text="Del 17 al 24 de Octubre 2016"
+                        android:id="@+id/tv_date"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:text="20:00 22:00 hrs"
+                        android:id="@+id/tv_hours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="18dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_title_event"
+                    android:textSize="18dp"
+                    android:textColor="@color/orange"
+                    android:text="Detalles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="Lorem ..................................  asdasdadasdasdasdadasdasdasdasdasdasdasdasdasd  asdasdasd adasda sadsdas das"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:layout_margin="18dp"
+                android:textSize="18dp"
+                android:textColor="@color/orange"
+                android:text="Eventos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_events"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_place">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

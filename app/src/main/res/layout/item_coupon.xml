@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_coupon"
+        android:scaleType="fitXY"
+        android:src="@drawable/coupon"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="Burger King"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:maxLines="1"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="Lunes 04 Nov. - Viernes 11 Nov."
+                android:id="@+id/tv_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/green"
+                android:text="Ver detallles"
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

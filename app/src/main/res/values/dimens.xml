@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="primaryText">17sp</dimen>
+    <dimen name="secondaryText">15sp</dimen>
+    <dimen name="accentText">13sp</dimen>
+
+    <dimen name="spinner_height">20sp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+</resources>

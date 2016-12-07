@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_event"
+        android:scaleType="fitXY"
+        android:src="@drawable/descarga"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="9dp"
+            android:src="@drawable/ic_favorite"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView2" />
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="ESTACIA, REUS Y CARME"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:ellipsize="end"
+                android:textAllCaps="false"
+                android:maxLines="1"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:maxLines="1"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:text="20:00 - 22:00 hrs"
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:maxLines="2"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="20:00 - 22:00 hrs"
+                android:ellipsize="end"
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:padding="9dp"
+            android:src="@drawable/ic_favorite"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView3" />
+    </LinearLayout>
+</LinearLayout>
